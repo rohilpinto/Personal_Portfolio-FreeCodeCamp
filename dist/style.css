@@ -124,6 +124,14 @@ a:active {
   fill: white;
 }
 
+/* Visible arrow for touch screen devices  */
+
+@media (max-width: 1024px) {
+  .arrow {
+    opacity: 100;
+  }
+}
+
 /*....Nav-bar-styling....  */
 #navbar {
   

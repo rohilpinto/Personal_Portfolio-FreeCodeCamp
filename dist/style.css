@@ -49,7 +49,23 @@ Body {
  overflow-x: hidden;
   
 }
+/* scroll bar for chrome  */
+/* custom scroll bar is not supported in fireFox*/
 
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--H1-clr);
+  
+}
+
+::-webkit-scrollbar-track {
+  background: var(--preview-btn);
+}
+ 
 a:link {
   color: #fae07a;
 }

@@ -301,6 +301,15 @@ a:active {
   position: relative;
 }
 
+
+.javascript-projects {
+  width: 100%;
+  display: flex;
+  border: 1px solid #000;
+  justify-content: center;
+  
+}
+
 /* Tile-Images */
 
 .product-landing-page {
@@ -321,6 +330,8 @@ a:active {
   background: url(https://i.postimg.cc/FzWySzTX/cropped-avicii-tribute-page.png);
   background-size: cover;
 }
+
+
 
 .github-btn,
 .preview-btn {

@@ -3,9 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   outline-style: none;
- 
 }
-
 
 :root {
   /*   --Title-Font: "Montserrat", sans-serif; */
@@ -24,11 +22,10 @@
   --preview-btn: #404040;
   --github-btn: #fc0086;
   font-size: 16px;
-  
-/*  Footer  */
-  
-  --footer-main: #2D2D2D; /* black */
-  
+
+  /*  Footer  */
+
+  --footer-main: #2d2d2d; /* black */
 }
 
 @media (max-width: 450px) {
@@ -40,32 +37,28 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
- 
 }
 
 Body {
   font-family: var(--Global-fnt);
   height: 100%;
- overflow-x: hidden;
-  
+  overflow-x: hidden;
 }
 /* scroll bar for chrome  */
 /* custom scroll bar is not supported in fireFox*/
 
 ::-webkit-scrollbar {
   width: 10px;
-
 }
 
 ::-webkit-scrollbar-thumb {
-   background: var(--H1-clr);
-  
+  background: var(--H1-clr);
 }
 
 ::-webkit-scrollbar-track {
   background: var(--preview-btn);
 }
- 
+
 a:link {
   color: #fae07a;
 }
@@ -85,7 +78,7 @@ a:active {
   background-repeat: no-repeat;
   background-color: #161616;
   height: 100vh;
- 
+
   transition: border-radius 300ms ease-out;
 }
 
@@ -106,7 +99,7 @@ a:active {
   height: 100px;
 
   position: absolute;
-   bottom: 100px;
+  bottom: 100px;
   left: 50%;
   z-index: 11;
   transform: translate(-50%) scale(0.7); /* to center the arrow div  */
@@ -114,8 +107,6 @@ a:active {
   opacity: 0;
   transition: opacity 200ms ease-out;
 }
-
-
 
 @keyframes arrow-up-down {
   0%,
@@ -150,21 +141,15 @@ a:active {
 
 /*....Nav-bar-styling....  */
 #navbar {
-  
-   
   width: 100%;
-  
+
   text-align: center;
   padding-top: 1rem;
   background: #161616;
   position: fixed;
   top: 0;
   z-index: 50;
-  
-   
 }
-
- 
 
 #navbar a {
   font-size: 1.4rem;
@@ -191,24 +176,22 @@ a:active {
 #welcome-section {
   position: absolute;
   top: 0;
- 
+
   width: 100%;
   height: 100vh;
 
   display: flex;
   flex-direction: column;
- 
+
   /*  To center intro-text vertically  */
   justify-content: center;
- 
 }
 
 #introduction {
   font-size: 3rem;
   font-weight: 400;
   color: white;
-  
- 
+
   padding: 1.5rem;
   text-align: center;
   margin-top: ;
@@ -223,8 +206,6 @@ a:active {
 .animationTxt1 {
   color: var(--H1-clr);
   font-weight: 800;
-
-  
 }
 
 @media (max-width: 615px) {
@@ -247,7 +228,7 @@ a:active {
 
   padding: 40px 80px 50px 80px;
   background: #161616;
-
+  /* outline: solid 2px green; */
   margin: 30px auto;
   border-radius: 40px;
   color: white;
@@ -256,18 +237,15 @@ a:active {
 
 @media (max-width: 369px) {
   #projects {
-     width: 100%;
+    width: 100%;
   }
-
-  
 }
 
 .projects-headline {
-  width: 90%;
+  width: 100%;
 
   font-size: 2.46rem;
   font-weight: 800;
-  border-radius: 40px;
 
   background: white;
   color: black;
@@ -276,8 +254,6 @@ a:active {
   /*   centering */
   text-align: center;
 }
-
-
 
 .headline-wrapper {
   width: 100%;
@@ -301,13 +277,28 @@ a:active {
   position: relative;
 }
 
-
-.javascript-projects {
-  width: 100%;
-  display: flex;
-  border: 1px solid #000;
-  justify-content: center;
+.javascript-headline-wrapper {
   
+  display: flex;
+  justify-content: start;
+  
+  
+}
+
+ 
+
+.js30-headline {
+  /* border: 1px solid white; */
+
+  width: 100%;
+
+  margin-top: 50px;
+   
+  font-size: 1.5rem;
+  padding: 1.0rem;
+  border-bottom: solid 2px white;
+  border-top: solid 2px white;
+  margin-bottom: 15px;
 }
 
 /* Tile-Images */
@@ -331,7 +322,13 @@ a:active {
   background-size: cover;
 }
 
-
+/* JS30 */
+.piano-project {
+  background: url(https://i.ibb.co/B4xhn3M/msedge-2020-11-27-20-23-46.png);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: top right;
+}
 
 .github-btn,
 .preview-btn {
@@ -340,8 +337,7 @@ a:active {
   display: block;
 
   margin: 0 auto 5px;
-  
-  
+
   width: 50%;
   border-radius: 30px;
 
@@ -369,25 +365,19 @@ a:active {
 
 .github-btn::before {
   content: url(https://img.icons8.com/windows/32/ffffff/github.png);
- 
 }
 .preview-btn::before {
   content: url(https://img.icons8.com/metro/26/ffffff/link.png);
-   
 }
 
-.github-btn::before , .preview-btn::before {
-  
+.github-btn::before,
+.preview-btn::before {
   display: flex;
-  
- 
-  justify-content: center;
-  
-  margin: 7px 0 1px;
-   
-}
 
- 
+  justify-content: center;
+
+  margin: 7px 0 1px;
+}
 
 .tile-grid-container {
   /*   border: 1px solid red; */
@@ -454,22 +444,16 @@ a:active {
 }
 
 /* Contact */
- 
-  
-  
- 
- 
+
 #contact {
   background: #272727;
   padding: 1rem;
   margin: 60px auto 30px;
   width: 85%;
-   
+
   border-radius: 20px;
-  
-  
-  box-shadow: 3px -2px 20px 0px rgba(255,255,255,0.2);
- 
+
+  box-shadow: 3px -2px 20px 0px rgba(255, 255, 255, 0.2);
 }
 .contact-headline-wrapper {
   display: flex;
@@ -518,8 +502,7 @@ a:active {
   width: 100%;
   background: white;
   padding: 10px 0 10px 20px;
-  border-radius: 0px 10px; 
-
+  border-radius: 0px 10px;
 }
 
 #myfile {
@@ -529,7 +512,6 @@ a:active {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 
 .submit-btn {
   border: none;
@@ -546,7 +528,7 @@ a:active {
 }
 
 .submit-btn:hover {
-  background: #9653FB;
+  background: #9653fb;
 }
 
 ::placeholder {
@@ -557,32 +539,28 @@ a:active {
 /* Social media */
 
 #social-media {
- border: 1px solid white;
+  border: 1px solid white;
   background: white;
   width: 60%;
   margin: 0 auto 20px;
   border-radius: 10px 10px 0 0;
-  
 }
- 
 
 .social-media-headline {
   margin-top: 10px;
-    
+
   font-size: 1rem;
- 
 }
 
 .social-media-headline::after {
   content: "";
   display: block;
   margin-top: 6px;
-  
+
   width: 100%;
   height: 4px;
   background: black;
 }
-
 
 .icon {
   width: 40px;
@@ -595,7 +573,7 @@ a:active {
 }
 footer {
   background: var(--footer-main);
-  color: #DFDFDF;
+  color: #dfdfdf;
   padding: 2rem;
   font-size: 1.3rem;
   width: 100%;
@@ -605,43 +583,32 @@ footer {
 
 footer > * {
   font-weight: lighter;
-  
 }
-
- 
-
 
 .top-btn {
   background: var(--primary-btn);
   padding: 0.4rem 2rem;
-   display: block;
+  display: block;
   width: 80px;
-  border-radius: 50px  0 0 50px;
-   text-align: center;
+  border-radius: 50px 0 0 50px;
+  text-align: center;
   text-decoration: none;
   color: white;
   transition: background 70ms ease-in-out;
-     
 }
 .top-btn:hover {
   background: white;
   color: black;
-   
 }
 .top-btn-wrapper {
-  
- 
- position: absolute;
+  position: absolute;
   margin-top: -20px;
   top: 0;
   right: 0;
-  
- 
 }
 
- 
 /* other Media Queries */
- 
+
 @media (max-width: 600px) {
   .project-tile {
     width: 250px;
@@ -652,7 +619,6 @@ footer > * {
   #tile-grid-container {
     padding: 30px;
   }
- 
 
   .contact-headline {
     margin-bottom: 10px;
@@ -671,7 +637,7 @@ footer > * {
     width: 95%;
     border-radius: 20px;
     padding: 10px 0 0px 0px;
-      text-align: center;
+    text-align: center;
   }
 
   .submit-btn {

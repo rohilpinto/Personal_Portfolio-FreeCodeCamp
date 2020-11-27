@@ -368,11 +368,11 @@ a:active {
 }
 
 .github-btn::before {
-  content: url(https://img.icons8.com/windows/32/000000/github.png);
+  content: url(https://img.icons8.com/windows/32/ffffff/github.png);
  
 }
 .preview-btn::before {
-  content: url(https://img.icons8.com/metro/26/000000/link.png);
+  content: url(https://img.icons8.com/metro/26/ffffff/link.png);
    
 }
 

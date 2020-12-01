@@ -241,28 +241,32 @@ a:active {
   }
 }
 
-.projects-headline {
-  width: 90%;
-
-  font-size: 2.46rem;
-  font-weight: 800;
-  border-radius: 40px;
-
-  background: white;
-  color: black;
-  padding: 10px 20px;
-
-  /*   centering */
-  text-align: center;
-}
-
 .headline-wrapper {
   width: 100%;
   /*   border: 1px solid white; */
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  border-bottom: 1px solid white;
 }
+
+.projects-headline {
+  width: 90%;
+
+  font-size: 2.46rem;
+  font-weight: 800;
+  /* border-radius: 40px; */
+
+
+  /* background: white; */
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+
+  /*   centering */
+  text-align: center;
+}
+
+
 /* Project tiles  */
 
 .project-tile {
@@ -278,11 +282,27 @@ a:active {
   position: relative;
 }
 
-.javascript-projects {
-  width: 100%;
-  display: flex;
-  border: 1px solid #000;
-  justify-content: center;
+/* javascript section */
+
+ .js-container {
+   width: 100%;
+  
+   margin-top: 35px;
+ 
+ }
+
+ .js-headline-wrapper {
+  width: 50%;
+  margin: 20px auto 20px auto;
+  background-color: rgb(237, 255, 73);
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  border-radius: 5px;
+ }
+
+ .js-projects-wrapper {
+   display: flex;
+   
 }
 
 /* Tile-Images */
@@ -304,6 +324,23 @@ a:active {
 .tribute-page {
   background: url(https://i.postimg.cc/FzWySzTX/cropped-avicii-tribute-page.png);
   background-size: cover;
+}
+
+
+/* js tiles */ 
+
+.js-piano {
+  background-image: url(https://i.ibb.co/B4xhn3M/msedge-2020-11-27-20-23-46.png);
+  background-size: contain;
+  background-repeat: repeat;
+
+  
+}
+
+.js-background-generator {
+  background-image: url(https://i.ibb.co/F6t0f1F/msedge-2020-12-01-19-23-51.png);
+  background-size: contain;
+  background-repeat:  repeat;
 }
 
 .github-btn,
@@ -399,15 +436,15 @@ a:active {
 }
 
 .about-headline {
-  color: black;
+  color: white;
   font-size: 2.1rem;
   font-weight: 700;
   width: 100%;
   max-width: 700px;
-  background: white;
+  border-bottom: 1px solid white;
   margin-top: 20px;
   padding: 5px 0 5px 0;
-  border-radius: 40px;
+   
 }
 
 .about-description {
@@ -436,15 +473,16 @@ a:active {
   justify-content: center;
 }
 .contact-headline {
-  color: black;
+  color: white;
   font-size: 1.6rem;
   font-weight: 600;
   width: 100%;
   max-width: 500px;
-  background: white;
+  border-bottom: 1px solid white;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 5px 0 5px 0;
-  border-radius: 40px;
+   
 }
 
 /* contact-form styling */

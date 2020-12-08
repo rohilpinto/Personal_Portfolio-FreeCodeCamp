@@ -292,7 +292,7 @@ Body {
 
 .js-projects-wrapper{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(325px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(325px, .2fr));
 
   justify-items: center;
   justify-content: center;

@@ -290,8 +290,11 @@ Body {
   padding: 1rem;
 }
 
-.js-projects-wrapper {
+.js-projects-wrapper{
+  display: flex;
 }
+
+ 
 
 /* Tile-Images */
 

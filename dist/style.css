@@ -291,7 +291,12 @@ Body {
 }
 
 .js-projects-wrapper{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
  

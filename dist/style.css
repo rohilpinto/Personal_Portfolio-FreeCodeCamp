@@ -156,6 +156,25 @@ Body {
   transition-duration: 600ms;
 }
 
+.drop-down-container {
+  display: inline-block;
+}
+
+.drop-down-items {
+  display: none;
+  position: absolute;
+  background-color: var(--Primary-bg);
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(253, 253, 253, 0.13);
+  z-index: 1;
+}
+
+.drop-down-container:hover .drop-down-items {
+  display: flex;
+  flex-direction: column;
+}
+
 #navbar a:hover {
   border-bottom: 1px solid #fc0086;
 }
@@ -212,14 +231,14 @@ Body {
 /* My Projects  */
 
 #projects {
-  width: 90%;
+  /* width: 90%; */
   height: 100%;
 
   padding: 40px 80px 50px 80px;
   background: #161616;
 
-  margin: 30px auto;
-  border-radius: 40px 40px 0 0;
+  margin: 10px auto;
+  /* border-radius: 10px 10px 0 0; */
   color: white;
   position: relative;
 }
@@ -271,9 +290,9 @@ Body {
 
 /* javascript section */
 
-.js-container {
+#js-container {
   width: 90%;
-  background: var(--Primary-bg);
+  /* background: var(--Primary-bg); */
   margin: 20px auto 20px auto;
   border-radius: 0 0 50px 50px;
   padding: 1rem 0 4rem 0;
@@ -290,9 +309,13 @@ Body {
   padding: 1rem;
 }
 
-.js-projects-wrapper{
+.js-headline {
+  font-size: 2.46rem;
+}
+
+.js-projects-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(325px, .2fr));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 0.2fr));
 
   justify-items: center;
   justify-content: center;
@@ -300,7 +323,7 @@ Body {
 }
 
 @media (max-width: 369px) {
-  .js-container{
+  .js-container {
     width: 100%;
   }
 }
@@ -419,7 +442,7 @@ Body {
 
 #about {
   background: var(--Primary-bg);
-  border-radius: 50px 50px 0 0;
+  /* border-radius: 50px 50px 0 0; */
   margin: auto;
   width: 100%;
   height: 100%;
@@ -462,7 +485,8 @@ Body {
 
   border-radius: 20px;
 
-  box-shadow: 3px -2px 20px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.055);
+  transition: all ease-in-out 0.2s;
 }
 .contact-headline-wrapper {
   display: flex;
@@ -470,7 +494,7 @@ Body {
 }
 .contact-headline {
   color: white;
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   font-weight: 600;
   width: 100%;
   max-width: 500px;
@@ -480,6 +504,9 @@ Body {
   padding: 5px 0 5px 0;
 }
 
+#contact:hover {
+  box-shadow: 0px 0px 60px 0px #fc00862a;
+}
 /* contact-form styling */
 
 .input-wrapper {
@@ -496,11 +523,11 @@ Body {
   text-align: left;
   margin-right: 10px;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .input-wrapper input {
-  border-radius: 0px 10px;
+  /* border-radius: 0px 10px; */
   width: 100%;
   border: none;
   padding: 20px;
@@ -511,15 +538,15 @@ Body {
   width: 100%;
   background: white;
   padding: 10px 0 10px 20px;
-  border-radius: 0px 10px;
+  /* border-radius: 0px 10px; */
 }
 
 #myfile {
   color: white;
   /* border: 1px solid #000; */
   padding: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-top: 20px; */
+  /* margin-bottom: 20px; */
 }
 
 .submit-btn {
@@ -533,7 +560,7 @@ Body {
   margin: 18px auto;
   cursor: pointer;
   font-size: 20px;
-  transition: background 150ms ease-out;
+  transition: background 0.3s ease-out;
 }
 
 .submit-btn:hover {
@@ -552,12 +579,11 @@ Body {
   background: white;
   width: 60%;
   margin: 0 auto 20px;
-  border-radius: 10px 10px 0 0;
+  /* border-radius: 10px 10px 0 0; */
 }
 
 .social-media-headline {
   margin-top: 10px;
-
   font-size: 1rem;
 }
 
@@ -565,7 +591,6 @@ Body {
   content: "";
   display: block;
   margin-top: 6px;
-
   width: 100%;
   height: 4px;
   background: black;

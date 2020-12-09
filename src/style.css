@@ -508,34 +508,6 @@ a:active {
   font-weight: light;
 }
 
-/* Social media */
-
-#social-media {
- border: 1px solid white;
-  background: white;
-  width: 60%;
-  margin: 0 auto 20px;
-  border-radius: 10px 10px 0 0;
-  
-}
- 
-
-.social-media-headline {
-  margin-top: 10px;
-    
-  font-size: 1rem;
- 
-}
-
-.social-media-headline::after {
-  content: "";
-  display: block;
-  margin-top: 6px;
-  
-  width: 100%;
-  height: 4px;
-  background: black;
-}
 
 
 .icon {

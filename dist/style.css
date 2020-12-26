@@ -167,7 +167,7 @@ Body {
   
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(253, 253, 253, 0.13);
-  z-index: 1;
+  z-index: 1000;
   
 }
 

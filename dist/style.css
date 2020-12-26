@@ -164,20 +164,15 @@ Body {
   display: none;
   position: absolute;
   background-color: var(--Primary-bg);
-  
+
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(253, 253, 253, 0.13);
   z-index: 1000;
-  
 }
 
- 
-
 .drop-down-container:hover .drop-down-items {
-
   display: flex;
   flex-direction: column;
- 
 }
 
 #navbar a:hover {
@@ -204,7 +199,7 @@ Body {
   font-size: 3rem;
   font-weight: 400;
   color: white;
-
+  border-bottom: 1px solid var(--H1-clr);
   padding: 1.5rem;
   text-align: center;
   margin-top: ;
@@ -464,7 +459,8 @@ Body {
   color: white;
   font-size: 2.1rem;
   font-weight: 700;
-  width: 100%;
+  /* width: 70%; */
+  
   max-width: 700px;
   border-bottom: 1px solid white;
   margin-top: 20px;
@@ -472,12 +468,17 @@ Body {
 }
 
 .about-description {
+  
   color: white;
-  width: 80%;
-  margin: 40px auto;
+  width: 60%;
+  margin: 20px auto;
   font-weight: 300;
-  font-size: 1.9rem;
-  line-height: 1.3;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  text-align: center;
+  /* border-top: 1px solid var(--H1-clr); */
+  padding-top: 10px;
+
 }
 
 /* Contact */
@@ -586,7 +587,6 @@ Body {
   margin: 0 auto 20px;
   /* border-radius: 10px 10px 0 0; */
 }
-
 
 footer {
   background: var(--footer-main);

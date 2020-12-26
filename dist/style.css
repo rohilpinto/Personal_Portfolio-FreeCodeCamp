@@ -200,9 +200,9 @@ Body {
   font-weight: 400;
   color: white;
   border-bottom: 1px solid var(--H1-clr);
-  padding: 1.5rem;
+  padding: 1.0rem;
   text-align: center;
-  margin-top: ;
+  /* margin-top: ; */
 
   letter-spacing: 3.8px;
 }
@@ -470,16 +470,17 @@ Body {
 .about-description {
   
   color: white;
-  width: 60%;
-  margin: 20px auto;
+  max-width: 900px;
+  margin: 15px auto;
   font-weight: 300;
   font-size: 1.3rem;
   line-height: 1.2;
   text-align: center;
   /* border-top: 1px solid var(--H1-clr); */
-  padding-top: 10px;
+  padding: 5px 20px 0 20px;
 
 }
+
 
 /* Contact */
 
@@ -661,3 +662,5 @@ footer > * {
     width: 60%;
   }
 }
+
+ 

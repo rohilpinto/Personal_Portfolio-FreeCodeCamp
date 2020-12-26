@@ -164,15 +164,20 @@ Body {
   display: none;
   position: absolute;
   background-color: var(--Primary-bg);
-
+  
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(253, 253, 253, 0.13);
   z-index: 1;
+  
 }
 
+ 
+
 .drop-down-container:hover .drop-down-items {
+
   display: flex;
   flex-direction: column;
+ 
 }
 
 #navbar a:hover {

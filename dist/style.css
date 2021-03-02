@@ -23,7 +23,6 @@
   --github-btn: #fc0086;
   font-size: 16px;
 
-
   /* Font-size */
 
   --headline-font-size: 2.5rem;
@@ -204,7 +203,7 @@ Body {
   font-weight: 400;
   color: white;
   border-bottom: 1px solid var(--H1-clr);
-  padding: 1.0rem;
+  padding: 1rem;
   text-align: center;
   /* margin-top: ; */
 
@@ -295,7 +294,7 @@ Body {
 /* javascript section */
 
 #js-container {
-  width: 90%;
+  width: 100%;
   /* background: var(--Primary-bg); */
   margin: 20px auto 20px auto;
   border-radius: 0 0 50px 50px;
@@ -365,6 +364,17 @@ Body {
   background-image: url(https://i.ibb.co/F6t0f1F/msedge-2020-12-01-19-23-51.png);
   background-size: contain;
   background-repeat: repeat;
+}
+
+.js-clock {
+  background-image: url(https://i.ibb.co/MZvW8Qm/msedge-2021-03-02-19-50-07.jpg);
+  background-size: contain;
+   
+}
+
+.flex-pannel {
+  background-image: url(https://i.ibb.co/3BzvPQs/msedge-2021-03-02-19-54-42.jpg);
+  background-size: contain;
 }
 
 .github-btn,
@@ -464,7 +474,7 @@ Body {
   font-size: 2.1rem;
   font-weight: 700;
   /* width: 70%; */
-  
+
   max-width: 700px;
   border-bottom: 1px solid white;
   margin-top: 20px;
@@ -472,7 +482,6 @@ Body {
 }
 
 .about-description {
-  
   color: white;
   max-width: 900px;
   margin: 15px auto;
@@ -482,9 +491,7 @@ Body {
   text-align: center;
   /* border-top: 1px solid var(--H1-clr); */
   padding: 5px 20px 0 20px;
-
 }
-
 
 /* Contact */
 
@@ -507,10 +514,9 @@ Body {
   font-size: var(--headline-font-size);
   font-weight: 700;
   color: white;
-  
- 
+
   width: 100%;
- 
+
   border-bottom: 1px solid white;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -557,10 +563,10 @@ Body {
 #myfile {
   color: white;
   max-width: 300px;
-  border: 1px solid rgb(255, 255, 255);
+  /* border: 1px solid rgb(255, 255, 255); */
   display: flex;
   margin: 20px auto auto 0px;
-  padding:  0;
+  padding: 0;
 }
 
 .submit-btn {
@@ -636,7 +642,6 @@ footer > * {
 
 @media (max-width: 600px) {
   .project-tile {
-    
     height: 500px;
     margin: 10px;
     border-radius: 10px;
@@ -660,7 +665,7 @@ footer > * {
   }
   .input-wrapper textarea {
     /* width: 95%; */
-     
+
     padding: 10px 0 0px 0px;
     text-align: center;
   }
@@ -670,4 +675,58 @@ footer > * {
   }
 }
 
- 
+@media (max-width: 376px) {
+  #navbar {
+    display: none;
+  }
+
+  #hamburger-nav {
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* left: -1000px; */
+   
+    z-index: 1500;
+  }
+
+  .hamburger-menu {
+    text-align: center;
+    line-height: 1.8;
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    background: white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 2000;
+    top:0;
+  }
+
+  .links-container {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border: 1px solid rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 2.1rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    left: -1000px;
+    background: black;
+  }
+
+  .links-container-inner {
+    /* background: rgb(252, 207, 207); */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    justify-content: space-around;
+  }
+}

@@ -723,12 +723,12 @@ footer > * {
 
   #hamburger-nav {
     border: 1px solid white;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    position: relative;
+    position: fixed;
     /* left: -1000px; */
    
-    z-index: 1500;
+    z-index: 3500;
   }
 
   .hamburger-menu {
@@ -790,7 +790,13 @@ footer > * {
 
 
 
-  .ham-links-open {
+  
+
+  .closeHamMenu {
+    left: -1000px
+  }
+
+  .hamLinksOpen {
     
     left: 0px;
 

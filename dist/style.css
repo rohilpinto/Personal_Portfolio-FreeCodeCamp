@@ -762,7 +762,7 @@ footer > * {
     left: -1000px;
     /* left: 0; */
     background: black;
-    transition: all 0.4s cubic-bezier(.65,.65,.62,1.42);
+    transition: all 0.7s cubic-bezier(.65,.65,.62,1.42);
   }
 
   .links-container-inner {

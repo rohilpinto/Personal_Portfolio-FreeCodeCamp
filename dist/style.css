@@ -716,7 +716,7 @@ footer > * {
   }
 }
 
-@media (max-width: 411px) {
+@media (max-width: 500px) {
   #navbar {
     display: none;
   }

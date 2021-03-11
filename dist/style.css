@@ -768,7 +768,7 @@ footer > * {
     left: -1000px;
     /* left: 0; */
     background-color: rgba(27, 18, 34, 1);
-    transition: all 0.7s cubic-bezier(.25,.72,1,.89);
+    transition: all 0.4s cubic-bezier(.25,.46,.88,.98);
      
   }
 

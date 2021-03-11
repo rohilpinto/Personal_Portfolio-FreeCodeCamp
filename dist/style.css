@@ -31,7 +31,7 @@
   --footer-main: #2d2d2d; /* black */
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   :root {
     font-size: 13px;
   }
@@ -60,6 +60,14 @@ Body {
 
 ::-webkit-scrollbar-track {
   background: var(--preview-btn);
+}
+
+:focus {
+  outline: 2px dashed white;
+}
+
+body.using-mouse :focus {
+  outline: none;
 }
 
 /* ................. Main-wrapper ............ */
@@ -714,6 +722,8 @@ footer > * {
   .submit-btn {
     /* width: 60%; */
   }
+
+
 }
 
 @media (max-width: 500px) {
@@ -722,29 +732,37 @@ footer > * {
   }
 
   #hamburger-nav {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 100vh;
-    width: 100%;
+    width: 50px;
     position: fixed;
     /* left: -1000px; */
-   
-    z-index: 3500;
-  }
 
+    z-index: 3500;
+   
+  }
+ 
+
+ 
   .hamburger-menu {
+    
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.6;
     display: block;
     font-size: 2rem;
     text-decoration: none;
     background: white;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     z-index: 2000;
     top:0;
     border: none;
-    margin: 5px;
+    margin: 0px -2px;
+    justify-self: flex-end;
+     
+    transition: all 0.1s cubic-bezier(.25,.46,.88,.98);
+    
   }
 
   .hamburger-menu:active {
@@ -768,8 +786,8 @@ footer > * {
     left: -1000px;
     /* left: 0; */
     background-color: rgba(27, 18, 34, 1);
-    transition: all 0.4s cubic-bezier(.25,.46,.88,.98);
-     
+    transition: all 0.2s cubic-bezier(.25,.46,.88,.98);
+    border-radius: 0 0 10% 0;
   }
 
   .links-container-inner {
@@ -801,6 +819,10 @@ footer > * {
     left: 0px;
 
   
+  }
+  .moveHamBtn {
+    
+    transform: translateX(212px);
   }
 
 }

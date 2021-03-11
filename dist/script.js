@@ -22,6 +22,7 @@ function openHamMenu(e) {
 
 	if(e.target.matches('.hamburger-menu')) {
 		linksContainer.classList.toggle('hamLinksOpen')
+		hamMenuBtn.classList.toggle('moveHamBtn')
 	} else {
 		linksContainer.classList.remove('hamLinksOpen')
 	}
@@ -32,3 +33,18 @@ function openHamMenu(e) {
 
 
 }
+
+
+body.addEventListener('mousedown', () => {
+	body.classList.add('using-mouse');
+})
+
+
+body.addEventListener('keydown', (e) => {
+	if(e.keyCode ===9) {
+		body.classList.remove('using-mouse')
+	}
+})
+
+
+ 

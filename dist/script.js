@@ -1,5 +1,5 @@
 const hamMenuBtn = document.querySelector(".hamburger-menu");
-console.log(hamMenuBtn);
+ 
 
 const linksContainer = document.querySelector(".links-container");
 const body = document.body;
@@ -10,18 +10,25 @@ const body = document.body;
  
 
 
+
+
+
 window.addEventListener('click' , openHamMenu)
 
 function openHamMenu(e) {
-	console.log(e.target);
+	console.log(linksContainer);
 
+ 
 
 	if(e.target.matches('.hamburger-menu')) {
-		linksContainer.classList.add('hamLinksOpen')
+		linksContainer.classList.toggle('hamLinksOpen')
 	} else {
 		linksContainer.classList.remove('hamLinksOpen')
 	}
 
+	// toggles classes & removes the class if clicked anywhere outside the button
+	 
+	
 
 
 }
